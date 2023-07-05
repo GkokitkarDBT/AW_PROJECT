@@ -1,4 +1,2 @@
-select city
-from people
-where city = {{ "Bangalore" }}
-;
+select *
+from {{ ref('TEST3') }}
