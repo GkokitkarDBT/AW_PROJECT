@@ -3,7 +3,7 @@
 with source_data as (
 
     
-    select 'Mohan'
+    select 'Mohan' as name 
     
 
 )

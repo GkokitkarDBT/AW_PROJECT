@@ -5,4 +5,4 @@ Gaurav as (
 select PERSONID, FIRSTANAME as FIRSTNAME, CITY
 from {{ ('TESTDBT.DBTSCHEMA.people2') }}
 )
-select * from Gaurav;
+select * from Gaurav
