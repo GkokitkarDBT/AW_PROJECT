@@ -1,5 +1,1 @@
-{{ config(materialized="table") }}
-
-select *
-from {{ ref("test1.sql") }}
-;
+select * from {{ ref("test.sql") }} where city = 1;
