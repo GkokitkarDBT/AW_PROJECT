@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
       
-with source_data as (
+with people2 as (
 
     
     select 'Mohan'
@@ -9,4 +9,4 @@ with source_data as (
 )
 
 select *
-from source_data
+from people2

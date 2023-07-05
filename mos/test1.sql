@@ -1,2 +1,2 @@
 select *
-from {{ ref('TEST3') }}
+from {{ ref('people2') }};
