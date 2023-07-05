@@ -1,9 +1,5 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
+{{ config(materialized="table") }}
 
-SELECT name
-FROM people
-WHERE PERSONID = {{ 102}};
+select *
+from {{ ref("test1.sql") }}
+;
