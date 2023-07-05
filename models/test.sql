@@ -3,7 +3,7 @@
 with source_data as (
 
     
-    select 'Bangalore' as 1
+    select 'Mohan'
     
 
 )
