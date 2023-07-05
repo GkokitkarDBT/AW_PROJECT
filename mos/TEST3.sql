@@ -3,8 +3,7 @@
 with people2 as (
 
     
-    select 'Mohan'
-    
+    select 'Mohan'    
 
 )
 
