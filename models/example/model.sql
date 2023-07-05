@@ -1,10 +1,7 @@
-    
+
 with source_data as (
-    select * from TESTDBT.DBTSCHEMA.people2
-    
-    
+    select * from {{ ref("SNOWFLAKE_SAMPLE_DATA","CUSTOMER") }}
 
-)
-
-select round(PERSONID,0),LASTNAME as LAST_NAME,FIRSTANAME as FIRST_NAME
+select *
 from source_data
+where C_CUSTKEY = 30001
