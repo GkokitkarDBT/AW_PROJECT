@@ -1,6 +1,5 @@
-
 with source_data as (
-    select * from {{ ref("SNOWFLAKE_SAMPLE_DATA","CUSTOMER") }}
+    select * from {{ source("SF1","CUSTOMER") }})
 
 select *
 from source_data
