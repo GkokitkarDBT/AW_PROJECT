@@ -1,0 +1,48 @@
+version: 2
+sources:
+  - name: stg_products
+    description: Staging of tables.
+    database: AW_PROJECT_DSTN
+    schema: AW_AW_PROJECT_SCHEMA
+    tables:
+      - name: aw_customer
+        description: Raw customer data.
+        columns:
+          - name: customer_key
+            description: Primary key for customer.
+            #incremental = true
+            tests:
+              - unique
+              - not_null
+      - name: aw_product
+        description: Raw products data.
+        columns:
+          - name: product_key
+            description: Primary key for products.
+            #incremental = true
+            tests:
+              - unique
+              - not_null
+      - name: aw_sales
+        description: Raw sales data.
+        columns:
+          - name: customer_key
+            description: Primary key for sales.
+            #incremental = true
+            tests:
+              - unique
+              - not_null
+
+      - name: aw_territory
+        description: Raw territory data.
+        columns:
+          - name: sales_territory
+            description: Primary key for territory.
+            #incremental = true-
+            tests:
+              - unique
+              - not_null  
+      
+      
+      
+      

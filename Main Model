@@ -1,0 +1,12 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+WITH final AS
+(
+    {{ ref('stg_customer') }}
+)
+
+SELECT * FROM final
